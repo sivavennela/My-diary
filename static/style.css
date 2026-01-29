@@ -1,0 +1,235 @@
+
+/* Dashboard Overall Body */
+.dashboard-body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+/* Header Styling */
+.top-nav {
+    background: linear-gradient(to right, #90f7ec, #81ee8e); /* Gradient from image */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.welcome-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.logout-btn-red {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Layout Container */
+.main-layout {
+    display: flex;
+    flex: 1;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 250px;
+    background-color: #7ef9e8; /* Light cyan from image */
+    padding: 20px;
+    border-right: 1px solid #ddd;
+}
+
+.add-entry-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.entry-list {
+    list-style: none;
+    padding: 0;
+}
+
+.entry-item {
+    background: white;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Content Area with Paper Background */
+.content-area {
+    flex: 1;
+    padding: 40px;
+    background-color: #fdfdfd;
+    background-image: url('https://www.transparenttextures.com/patterns/crumbled-paper.png'); /* Textured paper effect */
+}
+
+.entry-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-title {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.input-desc {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+}
+
+.add-btn {
+    width: 60px;
+    background-color: #28a745; /* Green button from image */
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+.login-body {
+    background-color: #e9ecef; /* Light gray background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container for Login Page (Two Columns) */
+.main-container {
+    display: flex;
+    width: 800px;
+    height: 500px;
+    background: white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+/* Left Side Styling */
+.logo-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid #f0f0f0;
+}
+
+.logo-content {
+    text-align: center;
+}
+
+.logo-content img {
+    width: 180px;
+    height: auto;
+}
+
+.brand-name {
+    font-size: 24px;
+    margin: 10px 0 5px 0;
+    color: #333;
+    font-weight: bold;
+}
+
+.tagline {
+    font-size: 12px;
+    color: #888;
+    letter-spacing: 1px;
+}
+
+/* Right Side Styling */
+.form-section {
+    flex: 1;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+/* FIXED: Removed the stray '.' before this comment */
+/* Styling for the Register Page (Single Column) */
+.single-container {
+    width: 400px; 
+    background: white;
+    padding: 60px 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    text-align: center;
+}
+
+.login-title {
+    color: #3498db;
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-weight: normal;
+}
+
+/* Input Group Styles */
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #fcfcfc;
+}
+
+/* Shared Button Styles */
+.login-button {
+    width: 100%; 
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #2980b9;
+}
+
+.register-link {
+    margin-top: 20px;
+}
+
+.register-link a {
+    color: #3498db;
+    text-decoration: none;
+    font-size: 14px;
+}

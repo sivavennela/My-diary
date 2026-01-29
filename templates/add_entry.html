@@ -1,0 +1,21 @@
+@app.route('/add', methods=['POST'])
+@login_required
+def add_entry():
+    # Retrieve data from the form fields 'title' and 'content'
+    title = request.form.get('title')
+    content = request.form.get('content')
+    
+    if content:
+        # Create a new entry including the title field
+        new_entry = Entry(
+            title=title, 
+            content=content, 
+            author=current_user
+        )
+        db.session.add(new_entry)
+        db.session.commit()
+        flash('New diary entry added!')
+    else:
+        flash('Content cannot be empty.')
+        
+    return redirect(url_for('index'))
